@@ -51,3 +51,8 @@ option {
   color: #0f172a;
   background-color: white;
 }
+
+html,
+body {
+  overflow-x: hidden;
+}

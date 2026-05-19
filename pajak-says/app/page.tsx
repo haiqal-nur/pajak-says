@@ -38,28 +38,32 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/35" />
         <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/25 to-black/10" />
 
-        <div className="relative z-10 mx-auto flex min-h-[calc(100vh-78px)] max-w-7xl flex-col justify-center px-8 pb-32">
+        <div className="relative z-10 mx-auto flex min-h-[calc(100vh-78px)] max-w-6xl flex-col justify-center px-6 pb-28 md:px-8">
           <div className="max-w-2xl text-white">
-            <p className="text-4xl font-medium drop-shadow-lg">Selamat Datang</p>
+            <p className="text-3xl font-medium drop-shadow-lg md:text-4xl">
+                Selamat Datang
+              </p>
 
-            <h1 className="mt-5 text-7xl font-black leading-none tracking-tight drop-shadow-xl md:text-8xl">
-              Pajak Says
-            </h1>
+              <h1 className="mt-4 text-[clamp(4rem,7vw,6.5rem)] font-black leading-none tracking-tight drop-shadow-xl">
+                Pajak Says
+              </h1>
 
-            <div className="mt-5 flex items-center gap-8">
-              <h2 className="text-4xl font-black drop-shadow-lg">PPh Pasal 22</h2>
-              <div className="hidden h-[3px] w-72 bg-white md:block" />
-            </div>
+              <div className="mt-4 flex items-center gap-6">
+                <h2 className="text-3xl font-black drop-shadow-lg md:text-4xl">
+                  PPh Pasal 22
+                </h2>
+                <div className="hidden h-[3px] w-56 bg-white md:block" />
+              </div>
 
-            <p className="mt-10 max-w-xl text-2xl font-bold leading-relaxed drop-shadow-lg">
+              <p className="mt-8 max-w-2xl text-xl font-bold leading-relaxed drop-shadow-lg md:text-2xl">
               Kami menyediakan panduan belajar PPh Pasal 22 terlengkap untuk
               memberikan pengalaman belajar pajak yang mudah dan asyik bagi kamu.
               Yuk, eksplor materi kami dan cobain langsung kemudahan simulasi hitungnya!
             </p>
           </div>
 
-          <div className="absolute bottom-16 left-1/2 z-20 w-[86%] max-w-3xl -translate-x-1/2">
-  <div className="flex h-20 items-center bg-white px-8 shadow-xl">
+          <div className="absolute bottom-12 left-1/2 z-20 w-[82%] max-w-3xl -translate-x-1/2">
+  <div className="flex h-16 items-center bg-white px-6 shadow-xl md:h-20 md:px-8">
     <svg
       width="34"
       height="34"
@@ -85,12 +89,12 @@ export default function Home() {
         }
       }}
       placeholder="Cari materi..."
-      className="h-full w-full border-none text-2xl font-semibold text-slate-700 outline-none placeholder:text-slate-400"
+      className="h-full w-full border-none text-xl font-semibold text-slate-700 outline-none placeholder:text-slate-400 md:text-2xl"
     />
 
     <button
       onClick={handleSearch}
-      className="ml-5 bg-orange-600 px-8 py-4 text-lg font-black text-white transition hover:bg-orange-700"
+      className="ml-4 bg-orange-600 px-6 py-3 text-base font-black text-white transition hover:bg-orange-700 md:px-8 md:py-4 md:text-lg"
     >
       Cari
     </button>
