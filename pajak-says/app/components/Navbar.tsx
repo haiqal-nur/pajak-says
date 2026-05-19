@@ -26,8 +26,8 @@ export default function Navbar() {
   const isFiturActive = fiturItems.some((item) => item.href === pathname);
 
   return (
-    <header className="fixed left-0 top-0 z-50 w-full bg-white shadow-sm">
-      <nav className="mx-auto flex h-[78px] max-w-7xl items-center justify-between px-8">
+    <header className="fixed left-0 top-0 z-50 w-full overflow-visible bg-white shadow-sm">
+      <nav className="relative mx-auto flex h-[78px] max-w-7xl items-center justify-between overflow-visible px-8">
         {/* Logo */}
         <Link href="/" className="text-3xl font-black text-orange-600">
           Pajak Says
@@ -99,13 +99,13 @@ export default function Navbar() {
             </button>
 
             {openDropdown === "fitur" && (
-                  <div className="absolute right-0 top-14 z-50 w-56 bg-white shadow-xl">
+              <div className="absolute right-0 top-full z-[999] mt-4 w-64 bg-white shadow-xl">
                 {fiturItems.map((item) => (
                   <Link
                     key={item.href}
                     href={item.href}
                     onClick={() => setOpenDropdown(null)}
-                    className={`flex items-center gap-3 px-5 py-4 text-base font-bold transition ${
+                    className={`flex items-center gap-3 px-6 py-5 text-base font-bold transition ${
                       pathname === item.href
                         ? "bg-orange-600 text-white"
                         : "text-slate-800 hover:bg-orange-50 hover:text-orange-600"
