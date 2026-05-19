@@ -63,7 +63,7 @@ export default function Navbar() {
             </button>
 
             {openDropdown === "materi" && (
-              <div className="absolute left-0 top-14 w-56 bg-white shadow-xl">
+              <div className="absolute right-0 top-14 z-50 w-56 bg-white shadow-xl">
                 {materiItems.map((item) => (
                   <Link
                     key={item.href}
@@ -99,7 +99,7 @@ export default function Navbar() {
             </button>
 
             {openDropdown === "fitur" && (
-              <div className="absolute left-0 top-14 w-56 bg-white shadow-xl">
+                  <div className="absolute right-0 top-14 z-50 w-56 bg-white shadow-xl">
                 {fiturItems.map((item) => (
                   <Link
                     key={item.href}
