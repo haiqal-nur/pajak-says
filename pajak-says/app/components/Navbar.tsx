@@ -26,22 +26,24 @@ const fiturItems = [
 
 export default function Navbar() {
   const pathname = usePathname();
+
   const [openDropdown, setOpenDropdown] = useState<"materi" | "fitur" | null>(
     null
   );
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const isMateriActive = materiItems.some((item) => item.href === pathname);
   const isFiturActive = fiturItems.some((item) => item.href === pathname);
 
   return (
     <header className="fixed left-0 top-0 z-50 w-full overflow-visible bg-white shadow-sm">
-      <nav className="relative mx-auto flex h-[78px] max-w-7xl items-center justify-between overflow-visible px-8">
+      <nav className="relative mx-auto flex h-[78px] max-w-7xl items-center justify-between overflow-visible px-6 md:px-8">
         {/* Logo */}
         <Link href="/" className="text-3xl font-black text-orange-600">
           Pajak Says
         </Link>
 
-        {/* Menu Tengah */}
+        {/* Desktop Menu */}
         <div className="hidden items-center gap-6 lg:flex">
           <Link
             href="/"
@@ -66,8 +68,7 @@ export default function Navbar() {
                   : "text-orange-600 hover:text-orange-800"
               }`}
             >
-              Materi
-              <span className="text-sm">▼</span>
+              Materi <span className="text-sm">▼</span>
             </button>
 
             {openDropdown === "materi" && (
@@ -102,8 +103,7 @@ export default function Navbar() {
                   : "text-orange-600 hover:text-orange-800"
               }`}
             >
-              Fitur
-              <span className="text-sm">▼</span>
+              Fitur <span className="text-sm">▼</span>
             </button>
 
             {openDropdown === "fitur" && (
@@ -128,8 +128,86 @@ export default function Navbar() {
           </div>
         </div>
 
-
+        {/* Mobile Hamburger */}
+        <button
+          onClick={() => setMobileOpen(!mobileOpen)}
+          className="flex h-11 w-11 items-center justify-center rounded-full text-orange-600 transition hover:bg-orange-50 lg:hidden"
+          aria-label="Menu"
+        >
+          <svg width="34" height="34" fill="none" viewBox="0 0 24 24">
+            <path
+              d="M4 7h16M4 12h16M4 17h16"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+            />
+          </svg>
+        </button>
       </nav>
+
+      {/* Mobile Menu */}
+      {mobileOpen && (
+        <div className="max-h-[calc(100vh-78px)] overflow-y-auto border-t border-orange-100 bg-white px-6 py-5 shadow-xl lg:hidden">
+          <Link
+            href="/"
+            onClick={() => setMobileOpen(false)}
+            className={`mb-3 block px-5 py-4 text-lg font-black ${
+              pathname === "/"
+                ? "bg-orange-600 text-white"
+                : "bg-orange-50 text-orange-600"
+            }`}
+          >
+            Home
+          </Link>
+
+          <div className="mb-4">
+            <p className="mb-2 px-2 text-sm font-black uppercase tracking-wide text-slate-500">
+              Materi
+            </p>
+
+            <div className="grid gap-2">
+              {materiItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className={`block border px-5 py-4 text-base font-bold ${
+                    pathname === item.href
+                      ? "border-orange-600 bg-orange-600 text-white"
+                      : "border-orange-100 bg-orange-50 text-slate-800"
+                  }`}
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <p className="mb-2 px-2 text-sm font-black uppercase tracking-wide text-slate-500">
+              Fitur
+            </p>
+
+            <div className="grid gap-2">
+              {fiturItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileOpen(false)}
+                  className={`flex items-center gap-3 border px-5 py-4 text-base font-bold ${
+                    pathname === item.href
+                      ? "border-orange-600 bg-orange-600 text-white"
+                      : "border-orange-100 bg-orange-50 text-slate-800"
+                  }`}
+                >
+                  <span>{item.icon}</span>
+                  {item.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
     </header>
   );
 }
