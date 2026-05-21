@@ -27,6 +27,8 @@ export default function PengecualianPage() {
             "Transaksi yang tidak dipungut PPh Pasal 22 dapat berupa impor atau penyerahan barang yang tidak terutang PPh, pembayaran tertentu oleh pemerintah, pembelian barang tertentu, atau transaksi yang telah dipungut melalui mekanisme lain.",
             "Contohnya adalah pembayaran oleh pemungut pemerintah paling banyak Rp2.000.000,00 tidak termasuk PPN dan bukan hasil pemecahan transaksi.",
             "Pengecualian juga dapat berlaku untuk pembayaran pembelian BBM, BBG, pelumas, benda pos, air, listrik, gabah atau beras, serta pembelian barang menggunakan dana bantuan operasional pendidikan.",
+            "Dengan adanya pengecualian ini, transaksi yang bersifat kecil, rutin, atau memiliki fungsi sosial tertentu tidak dibebani pemungutan PPh Pasal 22. Contohnya adalah penggunaan dana Bantuan Operasional Sekolah atau BOS, pembelian gabah atau beras oleh Perum BULOG, vaksin polio untuk Pekan Imunisasi Nasional, serta buku ilmu pengetahuan, buku pelajaran, dan kitab suci.",
+            " Transaksi-transaksi tersebut dikecualikan karena memiliki fungsi penting bagi pendidikan, kesehatan masyarakat, ketahanan pangan, dan kepentingan sosial-keagamaan.  ",
           ],
         },
         {
@@ -36,6 +38,15 @@ export default function PengecualianPage() {
             "Pengecualian atas impor diberikan terhadap barang tertentu yang memperoleh fasilitas pembebasan bea masuk dan/atau PPN.",
             "Pengecualian juga dapat berlaku untuk impor sementara yang akan diekspor kembali serta impor kembali atas barang yang sebelumnya telah diekspor.",
             "Pengecualian impor biasanya berkaitan dengan tujuan tertentu, seperti kepentingan negara, penelitian, bantuan sosial, barang yang mendapat fasilitas, atau barang yang hanya masuk sementara ke wilayah pabean Indonesia.",
+            "Beberapa contoh impor khusus yang termasuk dalam pengecualian PPh Pasal 22 antara lain: ",
+          ],
+          points: [
+            "Barang diplomatik dan barang untuk badan internasional, sepanjang memenuhi asas timbal balik dan ketentuan yang berlaku. Pengecualian ini diberikan karena barang tersebut berkaitan dengan hubungan diplomatik atau kepentingan lembaga internasional.",
+            "Impor sementara yang nyata-nyata akan diekspor kembali. Barang jenis ini tidak diperlakukan sebagai impor konsumsi biasa karena hanya masuk sementara ke wilayah Indonesia dan akan dikeluarkan kembali.",
+            "Persenjataan militer untuk TNI/Polri. Pengecualian ini diberikan karena barang tersebut berkaitan dengan kepentingan pertahanan dan keamanan nasional.",
+            "Barang untuk museum, penelitian ilmiah, atau kepentingan ilmu pengetahuan. Barang seperti ini dikecualikan karena penggunaannya bukan untuk kegiatan komersial biasa, melainkan untuk pengembangan ilmu pengetahuan, pendidikan, atau pelestarian.",
+            "Peti atau kemasan lain yang berisi jenazah. Pengecualian ini diberikan karena barang tersebut berkaitan dengan kepentingan kemanusiaan dan tidak memiliki sifat transaksi komersial biasa.",
+            "Barang kiriman hadiah atau hibah untuk ibadah, sosial, dan bencana alam. Barang tersebut dikecualikan karena memiliki tujuan sosial, kemanusiaan, dan bantuan masyarakat.",
           ],
         },
         {

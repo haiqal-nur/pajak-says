@@ -49,13 +49,13 @@ export default function RumusPage() {
               "Nilai pabean ditambah bea masuk menjadi dasar perhitungan PPh Pasal 22 impor.",
             ],
             formulas: [
-              "PPh Pasal 22 Impor = Tarif PPh Pasal 22 Impor × (Nilai Pabean + Bea Masuk)",
+              "PPh Pasal 22 Impor=Tarif PPh Pasal 22 Impor × Nilai Impor ",
             ],
             points: [
               "PPh Pasal 22 Impor adalah pajak yang dipungut atas kegiatan impor.",
               "Tarif PPh Pasal 22 Impor adalah tarif yang berlaku atas impor, misalnya 2,5% atau 7,5%.",
-              "Nilai Pabean adalah nilai barang impor yang digunakan sebagai dasar perhitungan kewajiban kepabeanan.",
-              "Bea Masuk adalah pungutan negara atas barang impor.",
+              "Nilai Impor adalah nilai barang impor yang digunakan sebagai dasar perhitungan kewajiban kepabeanan. Terdiri dari Cost, Insurance, dan Freight (CIF) + Bea Masuk",
+              "Bea Masuk pungutan negara atas barang impor. Nilai impor + Bea Masuk dan pungutan lainnya disebut sebagai dasar perhitungan PPh Pasal 22 impor.",
             ],
           },
           {
