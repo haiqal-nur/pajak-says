@@ -155,6 +155,74 @@ export default function MateriTemplate({
                           ))}
                         </ol>
                       )}
+
+                      {sub.formulas && (
+                        <div className="mt-6 bg-slate-950 p-6 text-white">
+                          <p className="text-lg font-black text-orange-300">
+                            Rumus
+                          </p>
+
+                          <div className="mt-4 space-y-4">
+                            {sub.formulas.map((formula, index) => (
+                              <div
+                                key={index}
+                                className="border border-white/10 bg-white/10 px-5 py-4 text-xl font-black leading-8"
+                              >
+                                {formula}
+                              </div>
+                            ))}
+                          </div>
+                        </div>
+                      )}
+
+                      {sub.tables && (
+                        <div className="mt-6 space-y-8">
+                          {sub.tables.map((table) => (
+                            <div
+                              key={table.title}
+                              className="overflow-hidden border border-slate-300 bg-white"
+                            >
+                              <div className="border-b border-slate-300 bg-orange-600 px-5 py-4">
+                                <h4 className="text-xl font-black text-white">
+                                  {table.title}
+                                </h4>
+                              </div>
+
+                              <div className="overflow-x-auto">
+                                <table className="w-full border-collapse text-left">
+                                  <thead>
+                                    <tr className="bg-orange-50">
+                                      {table.headers.map((header) => (
+                                        <th
+                                          key={header}
+                                          className="border border-slate-300 px-5 py-4 text-lg font-black text-slate-950"
+                                        >
+                                          {header}
+                                        </th>
+                                      ))}
+                                    </tr>
+                                  </thead>
+
+                                  <tbody>
+                                    {table.rows.map((row, rowIndex) => (
+                                      <tr key={rowIndex} className="hover:bg-orange-50">
+                                        {row.map((cell, cellIndex) => (
+                                          <td
+                                            key={cellIndex}
+                                            className="border border-slate-300 px-5 py-4 text-lg font-semibold leading-7 text-slate-700"
+                                          >
+                                            {cell}
+                                          </td>
+                                        ))}
+                                      </tr>
+                                    ))}
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
