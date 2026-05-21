@@ -5,9 +5,17 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const materiItems = [
-  { label: "Pengertian", href: "/pengertian" },
-  { label: "Tarif", href: "/tarif" },
-  { label: "Pemungut", href: "/pemungut" },
+  { label: "2.1 Pengantar Umum", href: "/materi/pengantar-umum" },
+  { label: "2.2 PPh Pasal 22", href: "/materi/pph-pasal-22" },
+  { label: "2.3 Dasar Hukum", href: "/materi/dasar-hukum" },
+  { label: "2.4 Pemungut", href: "/materi/pemungut" },
+  { label: "2.5 Objek", href: "/materi/objek" },
+  { label: "2.6 Pengecualian", href: "/materi/pengecualian" },
+  { label: "2.7 Tarif", href: "/materi/tarif" },
+  { label: "2.8 Rumus", href: "/materi/rumus" },
+  { label: "2.9 Studi Kasus", href: "/materi/studi-kasus" },
+  { label: "2.10 Mekanisme", href: "/materi/mekanisme" },
+  { label: "2.11 Sifat PPh 22", href: "/materi/sifat" },
 ];
 
 const fiturItems = [
@@ -63,7 +71,7 @@ export default function Navbar() {
             </button>
 
             {openDropdown === "materi" && (
-              <div className="absolute right-0 top-14 z-50 w-56 bg-white shadow-xl">
+              <div className="absolute right-0 top-full z-[999] mt-4 max-h-[70vh] w-80 overflow-y-auto bg-white shadow-xl">
                 {materiItems.map((item) => (
                   <Link
                     key={item.href}

@@ -1,46 +1,64 @@
-"use client";
+import Link from "next/link";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+const materiItems = [
+  {
+    number: "2.1",
+    title: "Pengantar Umum Perpajakan dan PPh",
+    href: "/materi/pengantar-umum",
+  },
+  {
+    number: "2.2",
+    title: "Pajak Penghasilan Pasal 22",
+    href: "/materi/pph-pasal-22",
+  },
+  {
+    number: "2.3",
+    title: "Dasar Hukum PPh Pasal 22",
+    href: "/materi/dasar-hukum",
+  },
+  {
+    number: "2.4",
+    title: "Pemungut PPh Pasal 22",
+    href: "/materi/pemungut",
+  },
+  {
+    number: "2.5",
+    title: "Objek PPh Pasal 22",
+    href: "/materi/objek",
+  },
+  {
+    number: "2.6",
+    title: "Pengecualian PPh Pasal 22",
+    href: "/materi/pengecualian",
+  },
+  {
+    number: "2.7",
+    title: "Tarif PPh Pasal 22",
+    href: "/materi/tarif",
+  },
+  {
+    number: "2.8",
+    title: "Dasar Pengenaan dan Rumus",
+    href: "/materi/rumus",
+  },
+  {
+    number: "2.9",
+    title: "Studi Kasus dan Contoh Perhitungan",
+    href: "/materi/studi-kasus",
+  },
+  {
+    number: "2.10",
+    title: "Mekanisme Pemungutan dan Pelaporan",
+    href: "/materi/mekanisme",
+  },
+  {
+    number: "2.11",
+    title: "Sifat PPh Pasal 22",
+    href: "/materi/sifat",
+  },
+];
 
 export default function Home() {
-  const router = useRouter();
-  const [search, setSearch] = useState("");
-
-  const handleSearch = () => {
-    const keyword = search.toLowerCase().trim();
-
-    if (
-      keyword.includes("pengertian") ||
-      keyword.includes("arti") ||
-      keyword.includes("definisi")
-    ) {
-      router.push("/pengertian");
-    } else if (keyword.includes("tarif") || keyword.includes("rumus")) {
-      router.push("/tarif");
-    } else if (
-      keyword.includes("pemungut") ||
-      keyword.includes("objek") ||
-      keyword.includes("pengecualian")
-    ) {
-      router.push("/pemungut");
-    } else if (keyword.includes("kalkulator") || keyword.includes("hitung")) {
-      router.push("/kalkulator");
-    } else if (keyword.includes("video")) {
-      router.push("/video");
-    } else if (
-      keyword.includes("kuis") ||
-      keyword.includes("soal") ||
-      keyword.includes("latihan")
-    ) {
-      router.push("/kuis");
-    } else {
-      alert(
-        "Materi tidak ditemukan. Coba ketik: pengertian, tarif, pemungut, kalkulator, video, atau kuis."
-      );
-    }
-  };
-
   return (
     <main className="min-h-screen bg-white text-slate-900">
       <section
@@ -49,11 +67,12 @@ export default function Home() {
           backgroundImage: "url('/images/hero-port.jpg')",
         }}
       >
-        <div className="absolute inset-0 bg-black/35" />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/25 to-black/10" />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/35 to-black/20" />
 
-        <div className="relative z-10 mx-auto flex min-h-[calc(100vh-78px)] max-w-7xl flex-col justify-center px-8 py-16">
-          <div className="max-w-3xl text-white">
+        <div className="relative z-10 mx-auto grid min-h-[calc(100vh-78px)] max-w-7xl gap-10 px-8 py-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          {/* Hero Text */}
+          <div className="text-white">
             <p className="text-3xl font-medium drop-shadow-lg md:text-4xl">
               Selamat Datang
             </p>
@@ -72,47 +91,55 @@ export default function Home() {
             <p className="mt-8 max-w-2xl text-xl font-bold leading-relaxed drop-shadow-lg md:text-2xl">
               Kami menyediakan panduan belajar PPh Pasal 22 terlengkap untuk
               memberikan pengalaman belajar pajak yang mudah dan asyik bagi kamu.
-              Yuk, eksplor materi kami dan cobain langsung kemudahan simulasi
-              hitungnya!
+              Pilih materi di samping untuk mulai belajar.
             </p>
 
-            <div className="mt-10 w-full max-w-3xl">
-              <div className="flex h-16 items-center bg-white px-6 shadow-xl md:h-20 md:px-8">
-                <svg
-                  width="34"
-                  height="34"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  className="mr-6 shrink-0 text-orange-600"
-                >
-                  <path
-                    d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                  />
-                </svg>
+            <div className="mt-10 flex flex-wrap gap-4">
+              <Link
+                href="/materi/pengantar-umum"
+                className="bg-orange-600 px-8 py-4 text-lg font-black text-white shadow-xl transition hover:bg-orange-700"
+              >
+                Mulai Belajar
+              </Link>
 
-                <input
-                  type="text"
-                  value={search}
-                  onChange={(e) => setSearch(e.target.value)}
-                  onKeyDown={(e) => {
-                    if (e.key === "Enter") {
-                      handleSearch();
-                    }
-                  }}
-                  placeholder="Cari materi..."
-                  className="h-full w-full border-none text-xl font-semibold text-slate-700 outline-none placeholder:text-slate-400 md:text-2xl"
-                />
+              <Link
+                href="/kalkulator"
+                className="bg-white px-8 py-4 text-lg font-black text-orange-600 shadow-xl transition hover:bg-orange-50"
+              >
+                Coba Kalkulator
+              </Link>
+            </div>
+          </div>
 
-                <button
-                  onClick={handleSearch}
-                  className="ml-4 bg-orange-600 px-6 py-3 text-base font-black text-white transition hover:bg-orange-700 md:px-8 md:py-4 md:text-lg"
+          {/* Pilihan Materi */}
+          <div className="bg-white/95 p-6 shadow-2xl backdrop-blur-md">
+            <div className="mb-5 border-b border-orange-100 pb-4">
+              <p className="text-lg font-black text-orange-600">
+                Koleksi Materi
+              </p>
+              <h3 className="mt-1 text-3xl font-black text-slate-950">
+                Bab II PPh Pasal 22
+              </h3>
+              <p className="mt-2 font-semibold text-slate-600">
+                Pilih salah satu materi untuk membuka halaman pembelajaran.
+              </p>
+            </div>
+
+            <div className="grid max-h-[520px] gap-3 overflow-y-auto pr-2 md:grid-cols-2">
+              {materiItems.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="group border border-orange-100 bg-orange-50 p-4 transition hover:-translate-y-1 hover:border-orange-600 hover:bg-orange-600 hover:shadow-lg"
                 >
-                  Cari
-                </button>
-              </div>
+                  <p className="text-lg font-black text-orange-600 group-hover:text-white">
+                    {item.number}
+                  </p>
+                  <h4 className="mt-1 text-base font-black leading-6 text-slate-900 group-hover:text-white">
+                    {item.title}
+                  </h4>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
