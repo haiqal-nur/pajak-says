@@ -71,6 +71,45 @@ export default function MekanismePage() {
           ],
         },
       ]}
+      miniQuiz={[
+        {
+          question: "Mekanisme PPh Pasal 22 dimulai ketika …",
+          options: [
+            "Terjadi transaksi yang termasuk objek PPh Pasal 22",
+            "Wajib Pajak menerima gaji bulanan",
+            "Perusahaan menutup laporan tahunan saja",
+            "Barang digunakan secara pribadi tanpa transaksi",
+          ],
+          answer: "Terjadi transaksi yang termasuk objek PPh Pasal 22",
+          explanation:
+            "Pemungutan PPh Pasal 22 dimulai ketika terjadi transaksi yang termasuk objek pemungutan.",
+        },
+        {
+          question: "Setelah PPh Pasal 22 dipungut, pemungut wajib…",
+          options: [
+            "Menyetorkannya ke kas negara",
+            "Menyimpannya sebagai pendapatan pribadi",
+            "Menghapus bukti transaksi",
+            "Membagikannya kepada pegawai",
+          ],
+          answer: "Menyetorkannya ke kas negara",
+          explanation:
+            "PPh Pasal 22 yang telah dipungut merupakan titipan negara, sehingga harus disetorkan ke kas negara.",
+        },
+        {
+          question: "Bukti pemungutan PPh Pasal 22 penting bagi pihak yang dipungut karena…",
+          options: [
+            "Mengganti NPWP",
+            "Menghapus seluruh kewajiban pajak selamanya",
+            "Dapat digunakan sebagai dasar kredit pajak jika PPh Pasal 22 bersifat tidak final",
+            "Menghapus kewajiban SPT Tahunan",
+          ],
+          answer:
+            "Dapat digunakan sebagai dasar kredit pajak jika PPh Pasal 22 bersifat tidak final",
+          explanation:
+            "Untuk PPh Pasal 22 yang tidak final, bukti pemungutan diperlukan agar pajak yang telah dipungut dapat dikreditkan dalam SPT Tahunan.",
+        },
+      ]}
       previous={{
         label: "Materi 2.9",
         href: "/materi/studi-kasus",

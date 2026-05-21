@@ -87,6 +87,44 @@ export default function RumusPage() {
             ],
           },
       ]}
+      miniQuiz={[
+        {
+          question: "Dasar pengenaan PPh Pasal 22 adalah …",
+          options: [
+            "Nilai transaksi yang digunakan untuk menghitung pajak",
+            "Nama perusahaan pembeli",
+            "Jumlah pegawai perusahaan",
+            "Nomor rekening pribadi",
+          ],
+          answer: "Nilai transaksi yang digunakan untuk menghitung pajak",
+          explanation:
+            "Dasar pengenaan adalah nilai yang menjadi dasar penghitungan PPh Pasal 22, seperti nilai impor, harga pembelian, harga jual, atau nilai pembayaran.",
+        },
+        {
+          question: "Rumus umum PPh Pasal 22 adalah…",
+          options: [
+            "Laba Bersih × Jumlah Karyawan",
+            "Tarif + Jumlah Pegawai",
+            "PPN - PPh",
+            "Tarif × Dasar Pengenaan",
+          ],
+          answer: "Tarif × Dasar Pengenaan",
+          explanation:
+            "PPh Pasal 22 dihitung dengan mengalikan tarif sesuai ketentuan dengan dasar pengenaan yang berlaku.",
+        },
+        {
+          question: "Rumus nilai impor dalam perhitungan PPh Pasal 22 impor adalah …",
+          options: [
+            "CIF + Bea Masuk + Pungutan Lain",
+            "Gaji + Bonus + THR",
+            "Harga Jual - Laba",
+            "PPN + PPnBM saja",
+          ],
+          answer: "CIF + Bea Masuk + Pungutan Lain",
+          explanation:
+            "Nilai impor terdiri dari CIF, bea masuk, dan pungutan lain sesuai ketentuan kepabeanan.",
+        },
+      ]}
       previous={{
         label: "Materi 2.7",
         href: "/materi/tarif",

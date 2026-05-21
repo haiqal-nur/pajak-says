@@ -51,6 +51,46 @@ export default function SifatPage() {
           ],
         },
       ]}
+      miniQuiz={[
+        {
+          question: "PPh Pasal 22 final berarti …",
+          options: [
+            "Pajak tidak memerlukan transaksi",
+            "Pajak selalu dikembalikan tunai",
+            "Pajak tidak perlu disetor",
+            "Pajak yang telah dipungut tidak dapat dikreditkan kembali dalam SPT Tahunan",
+          ],
+          answer:
+            "Pajak yang telah dipungut tidak dapat dikreditkan kembali dalam SPT Tahunan",
+          explanation:
+            "PPh Pasal 22 final dianggap selesai pada saat dipungut sehingga tidak dapat digunakan sebagai kredit pajak dalam SPT Tahunan.",
+        },
+        {
+          question: "Contoh PPh Pasal 22 yang bersifat final adalah …",
+          options: [
+            "Pembelian barang oleh pemerintah",
+            "Penjualan BBM, BBG, dan pelumas oleh produsen atau importir kepada penyalur atau agen",
+            "Impor barang dengan API",
+            "Penjualan emas biasa",
+          ],
+          answer:
+            "Penjualan BBM, BBG, dan pelumas oleh produsen atau importir kepada penyalur atau agen",
+          explanation:
+            "PPh Pasal 22 pada umumnya tidak final, tetapi penjualan BBM, BBG, dan pelumas oleh produsen atau importir kepada penyalur atau agen bersifat final.",
+        },
+        {
+          question: "PPh Pasal 22 tidak final berarti …",
+          options: [
+            "Tidak perlu disetor",
+            "Tidak perlu bukti pemungutan",
+            "Dapat dikreditkan dalam SPT Tahunan",
+            "Selalu bebas pajak",
+          ],
+          answer: "Dapat dikreditkan dalam SPT Tahunan",
+          explanation:
+            "PPh Pasal 22 tidak final dapat diperhitungkan sebagai kredit pajak dalam SPT Tahunan.",
+        },
+      ]}
       previous={{
         label: "Materi 2.10",
         href: "/materi/mekanisme",

@@ -39,6 +39,39 @@ export default function DasarHukumPage() {
           ],
         },
       ]}
+      miniQuiz={[
+        {
+          question: "Dasar utama pengaturan PPh Pasal 22 terdapat dalam…",
+          options: [
+            "Undang-Undang Pajak Penghasilan",
+            "Undang-Undang Lalu Lintas",
+            "Undang-Undang Ketenagakerjaan",
+            "Undang-Undang Perbankan",
+          ],
+          answer: "Undang-Undang Pajak Penghasilan",
+          explanation:
+            "PPh Pasal 22 bersumber dari Undang-Undang Pajak Penghasilan, khususnya Pasal 22.",
+        },
+        {
+          question: "Pihak yang diberi kewenangan untuk menunjuk pemungut PPh Pasal 22 adalah…",
+          options: ["Menteri Pendidikan", "Menteri Keuangan", "Gubernur", "Kepala Desa"],
+          answer: "Menteri Keuangan",
+          explanation:
+            "Menteri Keuangan diberi kewenangan untuk menetapkan pihak tertentu sebagai pemungut pajak atas transaksi tertentu.",
+        },
+        {
+          question: "Peraturan Menteri Keuangan dalam PPh Pasal 22 berfungsi untuk …",
+          options: [
+            "Mengganti semua jenis Pajak Penghasilan",
+            "Menghapus seluruh kewajiban pajak",
+            "Mengatur teknis pelaksanaan pemungutan PPh Pasal 22",
+            "Menentukan harga jual barang di pasar",
+          ],
+          answer: "Mengatur teknis pelaksanaan pemungutan PPh Pasal 22",
+          explanation:
+            "PMK mengatur teknis pelaksanaan PPh Pasal 22 seperti objek, pemungut, tarif, pengecualian, penyetoran, dan pelaporan.",
+        },
+      ]}
       previous={{
         label: "Materi 2.2",
         href: "/materi/pph-pasal-22",

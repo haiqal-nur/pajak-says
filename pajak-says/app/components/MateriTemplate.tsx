@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MiniQuiz, { type QuizQuestion } from "./MiniQuiz";
 
 type TableData = {
   title: string;
@@ -21,6 +22,7 @@ type MateriTemplateProps = {
   description: string;
   content: string[];
   subMateri?: SubMateri[];
+  miniQuiz?: QuizQuestion[];
   previous?: {
     label: string;
     href: string;
@@ -37,6 +39,7 @@ export default function MateriTemplate({
   description,
   content,
   subMateri,
+  miniQuiz,
   previous,
   next,
 }: MateriTemplateProps) {
@@ -227,6 +230,8 @@ export default function MateriTemplate({
                   ))}
                 </div>
               )}
+
+              {miniQuiz && <MiniQuiz questions={miniQuiz} />}
 
               <div className="mt-10 flex flex-wrap justify-between gap-4">
                 {previous ? (

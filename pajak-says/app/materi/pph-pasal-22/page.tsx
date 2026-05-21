@@ -65,6 +65,45 @@ export default function PPhPasal22Page() {
           ],
         },
       ]}
+      miniQuiz={[
+        {
+          question: "PPh Pasal 22 secara umum merupakan pajak yang dipungut atas …",
+          options: [
+            "Semua penghasilan tanpa pengecualian",
+            "Transaksi tertentu oleh pihak yang ditunjuk pemerintah",
+            "Gaji pegawai tetap setiap bulan",
+            "Pajak kendaraan pribadi",
+          ],
+          answer: "Transaksi tertentu oleh pihak yang ditunjuk pemerintah",
+          explanation:
+            "PPh Pasal 22 merupakan pemungutan PPh atas transaksi tertentu yang dilakukan oleh pihak yang ditunjuk pemerintah.",
+        },
+        {
+          question: "Salah satu ciri utama PPh Pasal 22 adalah …",
+          options: [
+            "Selalu berkaitan dengan gaji pegawai",
+            "Banyak berkaitan dengan transaksi barang dan impor",
+            "Tidak memiliki dasar hukum",
+            "Hanya berlaku untuk orang pribadi",
+          ],
+          answer: "Banyak berkaitan dengan transaksi barang dan impor",
+          explanation:
+            "PPh Pasal 22 banyak berkaitan dengan transaksi barang, seperti impor, pembelian barang oleh pemerintah, penjualan hasil industri, BBM, emas, dan kegiatan usaha tertentu.",
+        },
+        {
+          question: "Berdasarkan ketentuan perpajakan, PPh Pasal 22 dapat dipahami sebagai …",
+          options: [
+            "Pajak yang dipungut oleh pihak tertentu atas transaksi tertentu yang ditetapkan dalam peraturan perpajakan",
+            "Pajak yang hanya dikenakan atas gaji pegawai tetap setiap bulan",
+            "Pajak yang hanya dibayar sendiri oleh Wajib Pajak tanpa melibatkan pihak lain",
+            "Pajak daerah yang dikenakan atas konsumsi barang dan jasa",
+          ],
+          answer:
+            "Pajak yang dipungut oleh pihak tertentu atas transaksi tertentu yang ditetapkan dalam peraturan perpajakan",
+          explanation:
+            "PPh Pasal 22 dipungut oleh pihak tertentu yang ditunjuk berdasarkan ketentuan perpajakan atas transaksi tertentu.",
+        },
+      ]}
       previous={{
         label: "Materi 2.1",
         href: "/materi/pengantar-umum",

@@ -100,6 +100,39 @@ export default function ObjekPage() {
           ],
         },
       ]}
+      miniQuiz={[
+        {
+          question: "Objek PPh Pasal 22 adalah …",
+          options: [
+            "Transaksi atau kegiatan tertentu yang dikenai pemungutan pajak",
+            "Semua pengeluaran pribadi masyarakat",
+            "Semua kegiatan sosial tanpa pengecualian",
+            "Seluruh pinjaman bank",
+          ],
+          answer: "Transaksi atau kegiatan tertentu yang dikenai pemungutan pajak",
+          explanation:
+            "Objek PPh Pasal 22 adalah transaksi atau kegiatan tertentu yang dikenai pemungutan oleh pihak yang ditunjuk.",
+        },
+        {
+          question: "Salah satu objek utama PPh Pasal 22 adalah …",
+          options: ["Hadiah ulang tahun keluarga", "Iuran warga", "Tabungan pribadi", "Impor barang"],
+          answer: "Impor barang",
+          explanation:
+            "Impor barang merupakan salah satu objek utama PPh Pasal 22 karena memiliki nilai ekonomi yang jelas dan berada dalam pengawasan kepabeanan.",
+        },
+        {
+          question: "Penjualan barang sangat mewah dikenai PPh Pasal 22 karena …",
+          options: [
+            "Selalu merupakan transaksi kecil",
+            "Merupakan transaksi konsumsi bernilai tinggi",
+            "Tidak memiliki harga jual",
+            "Tidak termasuk kegiatan ekonomi",
+          ],
+          answer: "Merupakan transaksi konsumsi bernilai tinggi",
+          explanation:
+            "Barang sangat mewah mencerminkan transaksi konsumsi bernilai tinggi sehingga dapat dikenai PPh Pasal 22.",
+        },
+      ]}
       previous={{
         label: "Materi 2.4",
         href: "/materi/pemungut",

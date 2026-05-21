@@ -84,6 +84,24 @@ export default function StudiKasusPage() {
           ],
         },
       ]}
+      miniQuiz={[
+        {
+          question:
+            "Jika instansi pemerintah membeli barang senilai Rp200.000.000 dan tarif PPh Pasal 22 sebesar 1,5%, maka PPh Pasal 22 yang dipungut adalah …",
+          options: ["Rp1.500.000", "Rp2.000.000", "Rp3.000.000", "Rp4.500.000"],
+          answer: "Rp3.000.000",
+          explanation:
+            "PPh Pasal 22 = 1,5% × Rp200.000.000 = Rp3.000.000.",
+        },
+        {
+          question:
+            "PT Sinar Abadi memiliki API dengan nilai impor Rp800.000.000. Jika tarif PPh Pasal 22 impor 2,5%, maka PPh Pasal 22 yang dipungut adalah …",
+          options: ["Rp12.000.000", "Rp20.000.000", "Rp31.800.000", "Rp80.000.000"],
+          answer: "Rp20.000.000",
+          explanation:
+            "PPh Pasal 22 = 2,5% × Rp800.000.000 = Rp20.000.000.",
+        },
+      ]}
       previous={{
         label: "Materi 2.8",
         href: "/materi/rumus",

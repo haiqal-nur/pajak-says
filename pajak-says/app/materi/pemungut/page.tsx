@@ -83,6 +83,44 @@ export default function PemungutPage() {
           ],
         },
       ]}
+      miniQuiz={[
+        {
+          question: "Pemungut PPh Pasal 22 adalah …",
+          options: [
+            "Semua pembeli barang di pasar",
+            "Pihak yang ditunjuk untuk memungut pajak atas transaksi tertentu",
+            "Semua orang pribadi yang menerima gaji",
+            "Seluruh konsumen akhir",
+          ],
+          answer: "Pihak yang ditunjuk untuk memungut pajak atas transaksi tertentu",
+          explanation:
+            "Pemungut PPh Pasal 22 adalah pihak yang ditunjuk oleh ketentuan perpajakan untuk memungut pajak saat terjadi transaksi tertentu.",
+        },
+        {
+          question: "Direktorat Jenderal Bea dan Cukai berperan sebagai pemungut PPh Pasal 22 terutama atas …",
+          options: [
+            "Pajak restoran daerah",
+            "Pembayaran gaji pegawai",
+            "Sewa rumah pribadi",
+            "Kegiatan impor barang",
+          ],
+          answer: "Kegiatan impor barang",
+          explanation:
+            "DJBC berperan sebagai pemungut PPh Pasal 22 atas kegiatan impor karena barang impor berada dalam pengawasan kepabeanan.",
+        },
+        {
+          question: "Industri tertentu yang dapat menjadi pemungut PPh Pasal 22 antara lain …",
+          options: [
+            "Pendidikan dasar dan rumah tangga",
+            "Pariwisata, musik, dan hiburan",
+            "Semen, kertas, baja, otomotif, dan farmasi",
+            "Restoran kecil dan toko kelontong",
+          ],
+          answer: "Semen, kertas, baja, otomotif, dan farmasi",
+          explanation:
+            "Industri semen, kertas, baja, otomotif, dan farmasi termasuk industri tertentu yang dapat ditunjuk sebagai pemungut PPh Pasal 22.",
+        },
+      ]}
       previous={{
         label: "Materi 2.3",
         href: "/materi/dasar-hukum",

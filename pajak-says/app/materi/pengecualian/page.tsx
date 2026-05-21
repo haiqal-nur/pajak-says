@@ -57,6 +57,46 @@ export default function PengecualianPage() {
           ],
         },
       ]}
+      miniQuiz={[
+        {
+          question: "Pengecualian PPh Pasal 22 berarti …",
+          options: [
+            "PPh Pasal 22 tidak perlu dilaporkan",
+            "Semua transaksi bebas pajak",
+            "Transaksi tertentu tidak dipungut PPh Pasal 22 karena memenuhi syarat tertentu",
+            "Tarif PPh Pasal 22 selalu nol",
+          ],
+          answer:
+            "Transaksi tertentu tidak dipungut PPh Pasal 22 karena memenuhi syarat tertentu",
+          explanation:
+            "Pengecualian PPh Pasal 22 diberikan pada transaksi tertentu yang memenuhi syarat berdasarkan peraturan.",
+        },
+        {
+          question: "Salah satu contoh transaksi yang dapat dikecualikan dari PPh Pasal 22 adalah…",
+          options: [
+            "Semua impor barang mewah",
+            "Pembelian barang oleh pemerintah dengan nilai tertentu yang tidak melebihi batas pengecualian",
+            "Semua penjualan emas",
+            "Seluruh penjualan kendaraan",
+          ],
+          answer:
+            "Pembelian barang oleh pemerintah dengan nilai tertentu yang tidak melebihi batas pengecualian",
+          explanation:
+            "Pembelian barang oleh instansi pemerintah dengan nilai tertentu dapat dikecualikan sepanjang memenuhi ketentuan.",
+        },
+        {
+          question: "Surat Keterangan Bebas PPh Pasal 22 berfungsi sebagai…",
+          options: [
+            "Dasar administratif agar transaksi tertentu tidak dipungut PPh Pasal 22",
+            "Bukti bahwa semua pajak dihapus selamanya",
+            "Pengganti NPWP untuk seluruh transaksi",
+            "Faktur penjualan barang",
+          ],
+          answer: "Dasar administratif agar transaksi tertentu tidak dipungut PPh Pasal 22",
+          explanation:
+            "Surat Keterangan Bebas digunakan sebagai dasar bagi pemungut untuk tidak melakukan pemungutan PPh Pasal 22.",
+        },
+      ]}
       previous={{
         label: "Materi 2.5",
         href: "/materi/objek",

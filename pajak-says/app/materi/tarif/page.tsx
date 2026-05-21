@@ -146,6 +146,34 @@ export default function TarifPage() {
           ],
         },
       ]}
+      miniQuiz={[
+        {
+          question: "Tarif PPh Pasal 22 bersifat berbeda-beda karena…",
+          options: [
+            "PPh Pasal 22 hanya berlaku untuk satu jenis barang",
+            "Semua transaksi memiliki nilai yang sama",
+            "Tarif tidak diatur dalam ketentuan perpajakan",
+            "Objek dan jenis transaksinya beragam",
+          ],
+          answer: "Objek dan jenis transaksinya beragam",
+          explanation:
+            "Tarif PPh Pasal 22 berbeda-beda sesuai jenis transaksi seperti impor, pembelian barang pemerintah, penjualan hasil industri, emas, dan barang sangat mewah.",
+        },
+        {
+          question: "Tarif umum PPh Pasal 22 atas impor barang dengan API adalah …",
+          options: ["2,5%", "0,25%", "1,5%", "7,5%"],
+          answer: "2,5%",
+          explanation:
+            "Importir dengan API umumnya dikenai PPh Pasal 22 sebesar 2,5% dari nilai impor untuk barang selain kategori khusus.",
+        },
+        {
+          question: "Tarif PPh Pasal 22 atas penjualan barang sangat mewah adalah …",
+          options: ["1,5%", "0,25%", "5%", "0,5%"],
+          answer: "5%",
+          explanation:
+            "Penjualan barang sangat mewah tertentu dikenai PPh Pasal 22 sebesar 5% dari harga jual tidak termasuk PPN dan PPnBM.",
+        },
+      ]}
       previous={{
         label: "Materi 2.6",
         href: "/materi/pengecualian",
