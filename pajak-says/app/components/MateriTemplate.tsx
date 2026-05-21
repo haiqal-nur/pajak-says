@@ -1,10 +1,18 @@
 import Link from "next/link";
 
+type TableData = {
+  title: string;
+  headers: string[];
+  rows: string[][];
+};
+
 type SubMateri = {
   number: string;
   title: string;
   content: string[];
   points?: string[];
+  formulas?: string[];
+  tables?: TableData[];
 };
 
 type MateriTemplateProps = {

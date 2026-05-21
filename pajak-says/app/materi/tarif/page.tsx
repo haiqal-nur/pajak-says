@@ -20,21 +20,37 @@ export default function TarifPage() {
           ],
         },
         {
-          number: "2.7.2",
-          title: "Tarif PPh Pasal 22 atas Impor dan Ekspor Barang",
-          content: [
-            "Tarif PPh Pasal 22 atas impor dan ekspor barang umumnya dibedakan berdasarkan status importir dan jenis barang.",
-          ],
-          points: [
-            "Barang tertentu Lampiran A: 10% × Nilai Impor.",
-            "Barang tertentu lainnya Lampiran B: 7,5% × Nilai Impor.",
-            "Kedelai, gandum, dan tepung terigu: 0,5% × Nilai Impor.",
-            "Barang selain di atas dengan API: 2,5% × Nilai Impor.",
-            "Barang selain di atas tanpa API: 7,5% × Nilai Impor.",
-            "Barang yang tidak dikuasai: 7,5% × Harga Jual Lelang.",
-            "Ekspor komoditas tambang seperti batubara, mineral logam, dan bukan logam: 1,5% × Nilai Ekspor.",
-          ],
-        },
+            number: "2.7.2",
+            title: "Tarif PPh Pasal 22 atas Impor dan Ekspor Barang",
+            content: [
+              "Tarif PPh Pasal 22 atas impor dan ekspor barang umumnya dibedakan berdasarkan status importir dan jenis barang.",
+            ],
+            tables: [
+              {
+                title: "Tabel Tarif Impor",
+                headers: ["Jenis Barang", "Status", "Tarif"],
+                rows: [
+                  ["Barang Tertentu Lampiran A", "Dengan/tanpa API", "10% × Nilai Impor"],
+                  ["Barang Tertentu Lainnya Lampiran B", "Dengan/tanpa API", "7,5% × Nilai Impor"],
+                  ["Kedelai, Gandum, Tepung Terigu", "Dengan/tanpa API", "0,5% × Nilai Impor"],
+                  ["Barang Selain di atas", "Dengan API", "2,5% × Nilai Impor"],
+                  ["Barang Selain di atas", "Tanpa API", "7,5% × Nilai Impor"],
+                  ["Barang yang Tidak Dikuasai", "Tanpa Syarat", "7,5% × Harga Jual Lelang"],
+                ],
+              },
+              {
+                title: "Tabel Tarif Ekspor",
+                headers: ["Jenis Barang", "Status", "Tarif"],
+                rows: [
+                  [
+                    "Komoditas Tambang seperti Batubara, Mineral Logam, dan Bukan Logam",
+                    "Dilakukan oleh eksportir",
+                    "1,5% × Nilai Ekspor",
+                  ],
+                ],
+              },
+            ],
+          },
         {
           number: "2.7.3",
           title: "Tarif PPh Pasal 22 atas Pembelian Barang oleh Pemerintah",
@@ -44,32 +60,44 @@ export default function TarifPage() {
           ],
         },
         {
-          number: "2.7.4",
-          title: "Tarif PPh Pasal 22 atas Penjualan Hasil Produksi Industri Tertentu",
-          content: [
-            "Tarif PPh Pasal 22 atas penjualan hasil produksi industri tertentu berbeda-beda tergantung jenis industrinya.",
-          ],
-          points: [
-            "Industri kertas: 0,1% dari DPP PPN.",
-            "Industri semen: 0,25% dari DPP PPN.",
-            "Industri baja: 0,3% dari DPP PPN.",
-            "Industri otomotif: 0,45% dari DPP PPN.",
-            "Industri farmasi: 0,3% dari DPP PPN.",
-          ],
-        },
-        {
-          number: "2.7.5",
-          title: "Tarif PPh Pasal 22 atas Penjualan BBM, BBG, dan Pelumas",
-          content: [
-            "Tarif PPh Pasal 22 atas penjualan BBM, BBG, dan pelumas ditentukan berdasarkan jenis produk dan pihak pembelinya.",
-            "Perlakuan final berlaku atas penjualan BBM, BBG, dan pelumas oleh produsen atau importir kepada penyalur atau agen.",
-          ],
-          points: [
-            "BBM ke SPBU Pertamina: 0,25% × penjualan tidak termasuk PPN.",
-            "BBM ke SPBU swasta atau Non-SPBU: 0,3% × penjualan tidak termasuk PPN.",
-            "Bahan bakar gas atau pelumas: 0,3% × penjualan tidak termasuk PPN.",
-          ],
-        },
+            number: "2.7.4",
+            title: "Tarif PPh Pasal 22 atas Penjualan Hasil Produksi Industri Tertentu",
+            content: [
+              "Tarif PPh Pasal 22 atas penjualan hasil produksi industri tertentu berbeda-beda tergantung jenis industrinya.",
+            ],
+            tables: [
+              {
+                title: "Tabel Tarif Industri Tertentu",
+                headers: ["Jenis Industri", "Tarif"],
+                rows: [
+                  ["Industri kertas", "0,1% dari DPP PPN"],
+                  ["Industri semen", "0,25% dari DPP PPN"],
+                  ["Industri baja", "0,3% dari DPP PPN"],
+                  ["Industri otomotif", "0,45% dari DPP PPN"],
+                  ["Industri farmasi", "0,3% dari DPP PPN"],
+                ],
+              },
+            ],
+          },
+          {
+            number: "2.7.5",
+            title: "Tarif PPh Pasal 22 atas Penjualan BBM, BBG, dan Pelumas",
+            content: [
+              "Tarif PPh Pasal 22 atas penjualan BBM, BBG, dan pelumas ditentukan berdasarkan jenis produk dan pihak pembelinya.",
+              "Perlakuan final berlaku atas penjualan BBM, BBG, dan pelumas oleh produsen atau importir kepada penyalur atau agen.",
+            ],
+            tables: [
+              {
+                title: "Tabel Tarif BBM, BBG, dan Pelumas",
+                headers: ["Kategori Penjualan", "Tarif"],
+                rows: [
+                  ["BBM ke SPBU Pertamina", "0,25% × Penjualan tidak termasuk PPN"],
+                  ["BBM ke SPBU Swasta / Non-SPBU", "0,3% × Penjualan tidak termasuk PPN"],
+                  ["Bahan Bakar Gas / Pelumas", "0,3% × Penjualan tidak termasuk PPN"],
+                ],
+              },
+            ],
+          },
         {
           number: "2.7.6",
           title: "Tarif PPh Pasal 22 atas Pembelian Bahan dari Pedagang Pengumpul",
