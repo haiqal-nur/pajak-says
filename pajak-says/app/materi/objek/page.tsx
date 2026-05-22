@@ -96,7 +96,14 @@ export default function ObjekPage() {
           content: [
             "Penjualan emas perhiasan dan emas batangan termasuk objek khusus PPh Pasal 22.",
             "Pengusaha emas perhiasan dan/atau emas batangan dapat ditunjuk untuk memungut, menyetor, dan melaporkan PPh Pasal 22 atas penjualan emas.",
-            "Tarif yang umum dikenakan atas penjualan emas adalah 0,25% dari harga jual.",
+            "Tarif yang umum dikenakan atas penjualan emas adalah 0,25% dari harga jual, dengan pengecualian tertentu, misalnya penjualan kepada konsumen akhir atau pihak tertentu sesuai ketentuan yang berlaku.",
+          ],
+        },
+        {
+          number: "2.5.11",
+          title: "Ekspor komoditas",
+          content: [
+            "Ekspor komoditas tambang, batubara, mineral logam, dan mineral bukan logam yang dilakukan oleh eksportir, kecuali yang dilakukan oleh Wajib Pajak yang terikat dalam perjanjian kerja sama pengusaha pertambangan dan kontrak atau perjanjian karya.",
           ],
         },
       ]}

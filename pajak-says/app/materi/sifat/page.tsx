@@ -17,7 +17,7 @@ export default function SifatPage() {
           content: [
             "PPh Pasal 22 final adalah PPh Pasal 22 yang setelah dipungut tidak dapat dikreditkan lagi dalam SPT Tahunan.",
             "Artinya, kewajiban pajak atas transaksi tersebut dianggap selesai pada saat pajak dipungut.",
-            "Contoh PPh Pasal 22 yang dapat bersifat final adalah PPh Pasal 22 atas penjualan BBM, BBG, dan pelumas kepada penyalur atau agen tertentu.",
+            "Contoh PPh Pasal 22 yang bersifat final adalah PPh Pasal 22 atas penjualan bahan bakar minyak dan bahan bakar gas oleh produsen atau importir kepada penyalur atau agen. Karena bersifat final, pajak tersebut tidak diperhitungkan lagi sebagai kredit pajak dalam perhitungan PPh Tahunan.",
           ],
         },
         {

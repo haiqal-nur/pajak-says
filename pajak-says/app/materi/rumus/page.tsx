@@ -55,7 +55,7 @@ export default function RumusPage() {
               "PPh Pasal 22 Impor adalah pajak yang dipungut atas kegiatan impor.",
               "Tarif PPh Pasal 22 Impor adalah tarif yang berlaku atas impor, misalnya 2,5% atau 7,5%.",
               "Nilai Impor adalah nilai barang impor yang digunakan sebagai dasar perhitungan kewajiban kepabeanan. Terdiri dari Cost, Insurance, dan Freight (CIF) + Bea Masuk",
-              "Bea Masuk pungutan negara atas barang impor. Nilai impor + Bea Masuk dan pungutan lainnya disebut sebagai dasar perhitungan PPh Pasal 22 impor.",
+              "Bea Masuk pungutan negara atas barang impor. Nilai impor yang didalamnya Bea Masuk dan pungutan lainnya disebut sebagai dasar perhitungan PPh Pasal 22 impor.",
             ],
           },
           {

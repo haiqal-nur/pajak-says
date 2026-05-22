@@ -85,6 +85,7 @@ export default function TarifPage() {
             content: [
               "Tarif PPh Pasal 22 atas penjualan BBM, BBG, dan pelumas ditentukan berdasarkan jenis produk dan pihak pembelinya.",
               "Perlakuan final berlaku atas penjualan BBM, BBG, dan pelumas oleh produsen atau importir kepada penyalur atau agen.",
+              "Dari sisi sifat pemungutan, PPh Pasal 22 atas penjualan bahan bakar minyak dan bahan bakar gas oleh produsen atau importir kepada penyalur atau agen bersifat final. Sementara itu, pemungutan atas penjualan kepada selain penyalur atau agen bersifat tidak final dan dapat diperhitungkan sebagai pembayaran PPh dalam tahun berjalan.",
             ],
             tables: [
               {
@@ -134,7 +135,8 @@ export default function TarifPage() {
           title: "Tarif PPh Pasal 22 atas Penjualan Emas",
           content: [
             "Penjualan emas perhiasan dan emas batangan dapat dikenakan PPh Pasal 22 oleh pihak yang ditunjuk.",
-            "Tarif yang sering digunakan dalam ketentuan PPh Pasal 22 atas penjualan emas adalah 0,25% dari harga jual.",
+            "Tarif yang sering digunakan dalam ketentuan PPh Pasal 22 atas penjualan emas adalah 0,25% dari harga jual emas perhiasan atau emas batangan, dengan memperhatikan pengecualian tertentu, misalnya penjualan kepada konsumen akhir, Wajib Pajak UMKM yang dikenai PPh final, atau Wajib Pajak yang memiliki Surat Keterangan Bebas PPh Pasal 22.",
+            "Objek ini penting karena emas merupakan barang bernilai tinggi dan sering diperdagangkan, sehingga perlu ada mekanisme pemungutan agar transaksi tercatat dalam sistem perpajakan.",
           ],
         },
         {
