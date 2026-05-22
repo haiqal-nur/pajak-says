@@ -15,8 +15,8 @@ export default function MekanismePage() {
           number: "2.10.1",
           title: "Mekanisme Pemungutan PPh Pasal 22",
           content: [
-            "Pemungutan PPh Pasal 22 dilakukan oleh pemungut yang ditunjuk ketika transaksi terjadi atau pembayaran dilakukan.",
-            "Pemungut terlebih dahulu mengidentifikasi apakah transaksi termasuk objek PPh Pasal 22, lalu menentukan tarif dan dasar pengenaan yang sesuai.",
+            "Pemungutan PPh Pasal 22 dilakukan oleh pihak yang ditunjuk pemerintah pada saat transaksi terjadi atau pada saat pembayaran dilakukan. Pemungut terlebih dahulu mengidentifikasi apakah transaksi tersebut termasuk objek PPh Pasal 22.",
+            "Setelah itu, pemungut menentukan tarif dan dasar pengenaan yang sesuai, lalu menghitung jumlah pajak yang harus dipungut. Alur pemungutan secara sederhana:",
           ],
           points: [
             "Terjadi transaksi.",
@@ -26,6 +26,10 @@ export default function MekanismePage() {
             "Pemungut memungut pajak dari pihak yang dikenai pajak.",
             "Pemungut membuat bukti pemungutan.",
           ],
+          afterPoints:[
+            "Berdasarkan jenis transaksinya, pihak yang melakukan pemungutan PPh Pasal 22 dapat berbeda-beda. Pada transaksi impor barang, pemungutan berkaitan dengan kegiatan kepabeanan dan dapat dilakukan melalui mekanisme pembayaran oleh importir atau Direktorat Jenderal Bea dan Cukai.",
+            "Pada transaksi pembelian barang oleh pemerintah, pemungutan dilakukan oleh bendahara pemerintah atau pejabat yang ditunjuk. Sementara itu, pada transaksi tertentu seperti penjualan hasil produksi industri, pembelian bahan dari pedagang pengumpul, penjualan BBM, BBG, pelumas, kendaraan bermotor, atau emas batangan, pemungutan dilakukan oleh badan usaha atau industri tertentu yang telah ditetapkan sebagai pemungut. Oleh karena itu, mekanisme pemungutan PPh Pasal 22 tidak hanya bergantung pada objek transaksinya, tetapi juga pada pihak yang ditunjuk sebagai pemungut pajak.",
+          ]
         },
         {
           number: "2.10.2",
@@ -34,6 +38,13 @@ export default function MekanismePage() {
             "Setelah dipungut, PPh Pasal 22 harus disetorkan ke kas negara.",
             "Penyetoran dilakukan oleh pemungut pajak sesuai ketentuan administrasi perpajakan yang berlaku.",
             "Dalam transaksi impor, PPh Pasal 22 impor dilunasi bersamaan dengan pembayaran Bea Masuk.",
+            "Penyetoran PPh Pasal 22 dapat dijelaskan sebagai berikut:",
+          ],
+          points:[
+            "PPh Pasal 22 atas impor barang : disetor oleh importir yang bersangkutan atau Direktorat Jenderal Bea dan Cukai. Penyetoran dilakukan melalui Pos Persepsi, Bank Devisa Persepsi, atau Bank Persepsi dengan menggunakan SSP atau Surat Setoran Pabean, Cukai, dan Pajak (SSPCP). Dokumen tersebut berfungsi sebagai bukti bahwa PPh Pasal 22 atas impor telah dipungut dan disetorkan. PPh disetorkan bersamaan saat pembayaran Bea Masuk. ",
+            "PPh Pasal 22 atas ekspor komoditas tambang, batubara, mineral logam, dan mineral bukan logam : disetor oleh eksportir yang bersangkutan. Penyetoran dilakukan melalui Pos Persepsi, Bank Devisa Persepsi, atau Bank Persepsi menggunakan SSP atau SSPCP sebagai bukti pemungutan pajak. PPh disetorkan saat penyelesaian dokumen pabean. ",
+            "PPh Pasal 22 yang dipungut oleh bendahara pemerintah atau pejabat pemerintah tertentu : PPh wajib disetorkan oleh pemungut ke kas negara. Penyetoran dilakukan melalui Pos Persepsi, Bank Devisa, atau bank yang ditunjuk oleh Menteri Keuangan dengan menggunakan surat setoran pajak. Pemungut pajak wajib menerbitkan Bukti Pemungutan rangkap tiga (lembar pertama untuk Wajib Pajak, lembar kedua untuk KPP sebagai lampiran SPT, lembar ketiga sebagai arsip pemungut yang bersangkutan.. PPh ini dipungut pada saat pembayaran kepada rekanan.",
+            "PPh Pasal 22 yang dipungut oleh badan usaha atau industri tertentu : PPh disetor oleh pemungut melalui Pos Persepsi, Bank Devisa Persepsi, atau Bank Persepsi menggunakan SSP. Pemungut pajak wajib menerbitkan Bukti Pemungutan rangkap tiga. Badan usaha atau industri tertentu tersebut dapat meliputi BUMN atau badan usaha tertentu, industri semen, industri kertas, industri baja, industri otomotif, industri farmasi, ATPM, APM, importir kendaraan bermotor, produsen dan importir BBM, BBG, pelumas, industri atau eksportir yang membeli bahan dari sektor primer, badan usaha yang membeli batubara, serta badan usaha yang menjual emas batangan di dalam negeri.",
           ],
         },
         {

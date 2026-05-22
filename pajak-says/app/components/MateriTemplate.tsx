@@ -12,6 +12,7 @@ type SubMateri = {
   title: string;
   content: string[];
   points?: string[];
+  afterPoints?: string[];
   formulas?: string[];
   tables?: TableData[];
 };
@@ -157,6 +158,19 @@ export default function MateriTemplate({
                             <li key={index}>{point}</li>
                           ))}
                         </ol>
+                      )}
+
+                      {sub.afterPoints && (
+                        <div className="mt-5 space-y-5">
+                          {sub.afterPoints.map((paragraph, index) => (
+                            <p
+                              key={index}
+                              className="text-lg font-semibold leading-8 text-slate-700"
+                            >
+                              {paragraph}
+                            </p>
+                          ))}
+                        </div>
                       )}
 
                       {sub.formulas && (
