@@ -116,6 +116,126 @@ const quizQuestions: QuizQuestion[] = [
     explanation:
       "Kapal pesiar pribadi termasuk contoh barang sangat mewah yang dapat dikenakan PPh Pasal 22.",
   },
+  {
+    question:
+      "Pajak merupakan kontribusi wajib kepada negara yang bersifat memaksa karena …",
+    options: [
+      "Dipungut berdasarkan kesepakatan masyarakat",
+      "Dipungut berdasarkan undang-undang",
+      "Dipungut hanya jika Wajib Pajak bersedia",
+      "Dipungut oleh perusahaan swasta",
+    ],
+    answer: "Dipungut berdasarkan undang-undang",
+    explanation:
+      "Pajak bersifat memaksa karena pemungutannya didasarkan pada undang-undang dan wajib dipenuhi oleh Wajib Pajak yang memenuhi ketentuan.",
+  },
+  {
+    question: "Salah satu tujuan pemungutan PPh Pasal 22 adalah ....",
+    options: [
+      "Menghapus seluruh kewajiban pajak",
+      "Mengamankan penerimaan negara sejak transaksi terjadi",
+      "Menghindari pencatatan transaksi",
+      "Membebaskan semua transaksi barang dari pajak",
+    ],
+    answer: "Mengamankan penerimaan negara sejak transaksi terjadi",
+    explanation:
+      "PPh Pasal 22 membantu negara memperoleh penerimaan pajak lebih awal karena dipungut pada saat transaksi tertentu berlangsung.",
+  },
+  {
+    question: "Dasar hukum utama PPh Pasal 22 terdapat dalam ....",
+    options: [
+      "Undang-Undang Pajak Penghasilan",
+      "Undang-Undang Lalu Lintas",
+      "Undang-Undang Ketenagakerjaan",
+      "Undang-Undang Perbankan",
+    ],
+    answer: "Undang-Undang Pajak Penghasilan",
+    explanation:
+      "PPh Pasal 22 bersumber dari Undang-Undang Pajak Penghasilan yang memberikan kewenangan kepada Menteri Keuangan untuk menunjuk pemungut pajak.",
+  },
+  {
+    question:
+      "Industri tertentu yang dapat menjadi pemungut PPh Pasal 22 antara lain ....",
+    options: [
+      "Semen, kertas, baja, otomotif, dan farmasi",
+      "Restoran, hotel, dan tempat wisata",
+      "Sekolah, kampus, dan perpustakaan",
+      "Toko kelontong dan warung makan",
+    ],
+    answer: "Semen, kertas, baja, otomotif, dan farmasi",
+    explanation:
+      "Industri semen, kertas, baja, otomotif, dan farmasi dapat ditunjuk sebagai pemungut PPh Pasal 22 atas penjualan hasil produksinya.",
+  },
+  {
+    question:
+      "Dalam pembelian barang oleh BUMN atau badan usaha tertentu, pihak yang dipungut PPh Pasal 22 adalah ....",
+    options: [
+      "BUMN sebagai pembeli",
+      "Pemasok atau penjual barang",
+      "Konsumen akhir",
+      "Pemerintah daerah",
+    ],
+    answer: "Pemasok atau penjual barang",
+    explanation:
+      "Pada transaksi ini, BUMN atau badan usaha tertentu bertindak sebagai pemungut, sedangkan pemasok atau penjual menjadi pihak yang dipungut.",
+  },
+  {
+    question:
+      "Pembayaran oleh pemungut pemerintah paling banyak Rp2.000.000 tidak dipungut PPh Pasal 22 apabila ....",
+    options: [
+      "Termasuk PPN dan boleh dipecah-pecah",
+      "Tidak termasuk PPN dan bukan hasil pemecahan transaksi",
+      "Selalu berupa transaksi impor",
+      "Dilakukan untuk semua jenis pembayaran tanpa syarat",
+    ],
+    answer: "Tidak termasuk PPN dan bukan hasil pemecahan transaksi",
+    explanation:
+      "Transaksi kecil oleh pemungut pemerintah dapat dikecualikan jika nilainya paling banyak Rp2.000.000, tidak termasuk PPN, dan bukan hasil pemecahan transaksi.",
+  },
+  {
+    question: "Rumus umum PPh Pasal 22 adalah ....",
+    options: [
+      "Tarif × Dasar Pengenaan Pajak",
+      "Laba Bersih × Jumlah Karyawan",
+      "PPN − PPh",
+      "Harga Jual − Harga Beli",
+    ],
+    answer: "Tarif × Dasar Pengenaan Pajak",
+    explanation:
+      "PPh Pasal 22 dihitung dengan mengalikan tarif yang berlaku dengan dasar pengenaan pajaknya.",
+  },
+  {
+    question: "PPh Pasal 22 tidak final berarti ....",
+    options: [
+      "Tidak perlu disetor",
+      "Tidak memerlukan bukti pemungutan",
+      "Dapat dikreditkan dalam SPT Tahunan",
+      "Selalu bebas pajak",
+    ],
+    answer: "Dapat dikreditkan dalam SPT Tahunan",
+    explanation:
+      "PPh Pasal 22 tidak final dapat digunakan sebagai kredit pajak dalam SPT Tahunan untuk mengurangi PPh terutang pada akhir tahun.",
+  },
+  {
+    question:
+      "Jika instansi pemerintah membeli barang senilai Rp200.000.000 tidak termasuk PPN, dan tarif PPh Pasal 22 adalah 1,5%, maka PPh Pasal 22 yang dipungut adalah ....",
+    options: ["Rp1.500.000", "Rp2.000.000", "Rp3.000.000", "Rp4.500.000"],
+    answer: "Rp3.000.000",
+    explanation:
+      "PPh Pasal 22 = 1,5% × Rp200.000.000 = Rp3.000.000.",
+  },
+  {
+    question: "Setelah PPh Pasal 22 dipungut, pemungut wajib ....",
+    options: [
+      "Menyetorkannya ke kas negara",
+      "Menyimpannya sebagai pendapatan pribadi",
+      "Menghapus bukti transaksi",
+      "Membagikannya kepada pegawai",
+    ],
+    answer: "Menyetorkannya ke kas negara",
+    explanation:
+      "PPh Pasal 22 yang telah dipungut merupakan pajak yang harus disetorkan ke kas negara sesuai ketentuan administrasi perpajakan.",
+  },
 ];
 
 export default function KuisPage() {
